@@ -218,6 +218,302 @@
                 align-items: flex-start;
             }
         }
+
+        /* ==================== 提交页面简化样式 ==================== */
+        .submit-simplified {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .submit-heading {
+            font-size: 1.6rem;
+            color: #1e3c72;
+            margin-bottom: 32px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* 基本信息区域 - 无边框纯文本 */
+        .info-simple {
+            margin-bottom: 32px;
+        }
+
+        .info-heading {
+            font-size: 1.2rem;
+            color: #2c5a7a;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: baseline;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f0f4f8;
+        }
+
+        .info-label {
+            font-size: 1rem;
+            color: #4a627a;
+            font-weight: 500;
+            min-width: 120px;
+        }
+
+        .info-value {
+            font-size: 1rem;
+            color: #1e3c72;
+            font-weight: 600;
+        }
+
+        /* 创新点区域 - 无边框纯文本 */
+        .innovation-simple {
+            margin-bottom: 40px;
+        }
+
+        .innovation-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .innovation-heading {
+            font-size: 1.2rem;
+            color: #2c5a7a;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .innovation-count {
+            background: #eef2fc;
+            color: #1e4a76;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+        }
+
+        .innovation-list {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            padding: 16px 0;
+            min-height: 80px;
+            color: #1a2c3e;
+        }
+
+        .innovation-note {
+            font-size: 0.85rem;
+            color: #6c8dae;
+            margin: 0;
+        }
+
+        /* 三步操作流程 */
+        .steps-simple {
+            margin-bottom: 40px;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 32px;
+            padding: 24px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .step.active {
+            background-color: #f8fafe;
+        }
+
+        .step.disabled {
+            opacity: 0.6;
+        }
+
+        .step-marker {
+            width: 36px;
+            height: 36px;
+            background: #1e4a76;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .step.disabled .step-marker {
+            background: #a0aec0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            color: #1e3c72;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        .step-description {
+            font-size: 0.9rem;
+            color: #4a627a;
+            margin: 0 0 16px 0;
+        }
+
+        .step-button {
+            padding: 12px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .step-button.primary {
+            background: linear-gradient(135deg, #1e4a76, #2b6a9f);
+            color: white;
+        }
+
+        .step-button.secondary {
+            background: #2c7a4d;
+            color: white;
+        }
+
+        .step-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .step-button:not(:disabled):hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .step-actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .step-action {
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .step-action.primary {
+            background: #1e4a76;
+            color: white;
+        }
+
+        .step-action.tertiary {
+            background: #eef3fc;
+            color: #1e4a76;
+            border: 1px solid #cbdde9;
+        }
+
+        .step-action:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .step-note {
+            font-size: 0.85rem;
+            color: #4a627a;
+            margin: 0;
+        }
+
+        /* 数据预览区域 */
+        .data-preview {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 2px solid #e9f0f5;
+        }
+
+        .data-preview.hidden {
+            display: none;
+        }
+
+        .preview-heading {
+            font-size: 1.2rem;
+            color: #2c5a7a;
+            margin: 0 0 4px 0;
+            font-weight: 600;
+        }
+
+        .preview-subtitle {
+            font-size: 0.9rem;
+            color: #4a627a;
+            margin: 0 0 16px 0;
+        }
+
+        .preview-content {
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            white-space: pre-wrap;
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        .preview-note {
+            padding: 12px;
+            background: #fff9ef;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #8a6d3b;
+            margin: 0;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 700px) {
+            .submit-simplified {
+                padding: 16px;
+            }
+
+            .step {
+                flex-direction: column;
+                gap: 12px;
+                padding: 16px;
+            }
+
+            .step-marker {
+                align-self: flex-start;
+            }
+
+            .step-actions {
+                flex-direction: column;
+            }
+
+            .info-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .info-label {
+                min-width: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -244,9 +540,8 @@
                 <p style="text-indent:2em">您好！感谢您参与本次实验。本实验旨在了解大学生在使用生成式人工智能工具完成学习任务过程中的体验与表现。实验仅用于学术研究，所有数据将以匿名方式处理，不会涉及您的个人隐私，请您放心参与。</p>
                 <p><strong>一、实验目的</strong><br>本实验旨在探究不同人机交互方式下，大学生在完成学习任务时的思考过程与表现差异。实验过程中不存在对错之分，请您按照真实想法完成任务。</p>
                 <p><strong>二、实验流程</strong><br>本实验大致包括以下几个阶段：<br>1、阅读实验说明并签署知情同意书；<br>2、按照实验指引完成相关任务；<br>3、使用生成式人工智能工具辅助完成任务；<br>4、提交任务成果；<br>5、填写实验结束问卷。</p>
-                <p><strong>三、实验时长</strong><br>整个实验过程预计持续90-100分钟，中途可适当休息。</p>
-                <p><strong>四、注意事项</strong><br>1、请独立完成实验任务，不与他人讨论；<br>2、实验过程中请按照说明进行操作；<br>3、如感到不适或希望退出，可随时终止实验，不会产生任何不良影响。</p>
-                <p><strong>五、数据说明</strong><br>本实验数据仅用于学术研究分析，所有结果均以匿名形式呈现，不涉及个人身份信息。</p>
+                <p><strong>三、注意事项</strong><br>1、请独立完成实验任务，不与他人讨论；<br>2、实验过程中请按照说明进行操作；<br>3、如感到不适或希望退出，可随时终止实验，不会产生任何不良影响。</p>
+                <p><strong>四、数据说明</strong><br>本实验数据仅用于学术研究分析，所有结果均以匿名形式呈现，不涉及个人身份信息。</p>
                 <p>再次感谢您的参与与支持！</p>
             </div>
         </div>
@@ -346,6 +641,7 @@
     <div id="tab3" class="tab-pane">
         <div class="card">
             <h3>🥤 纸杯的非常规用途：请在5分钟内,尽可能多地写出“一个普通纸杯”的不同用途。每条尽量不同,不必考虑现实可行性。</h3>
+            <br>
             <label>✏️ 【注意】每行写一个用途 (至少5个 | 喝水/装笔等常见用途不计分)</label>
             <textarea id="cupUses" rows="6" placeholder="例如：花盆&#10;扩音器&#10;灯罩&#10;防滑垫&#10;沙漏"></textarea>
             <div style="margin-top: 12px; text-align: right;">
@@ -364,43 +660,6 @@
 <!-- ========================= 选项卡4: 核心任务 + 创新方案提交（完整修复版） ========================= -->
 <div id="tab4" class="tab-pane">
     <div class="card" style="padding: 24px;">
-        <!-- 角色说明 -->
-        <div class="guide-box" style="margin-bottom: 24px; background: #f0f4fa; border-left-color: #3a7ca5;">
-            <h4 style="margin: 0 0 8px 0;">🎓 你的角色</h4>
-            <p style="margin: 0; font-size: 0.95rem;">一位正在探索如何利用新技术改进学习体验的大学生创新者。</p>
-        </div>
-
-        <!-- 两栏布局：问题背景 + 核心任务 -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
-            <div class="guide-box" style="background: #f9f9ff; border-left-color: #5f9dc9;">
-                <h4 style="margin: 0 0 12px 0;">📌 问题背景</h4>
-                <p style="margin: 0 0 8px 0; font-size: 0.9rem;">在数字化时代，传统的学习方式正面临挑战。许多大学生发现：</p>
-                <ul style="margin: 0; padding-left: 20px; font-size: 0.9rem;">
-                    <li><strong>被动接收多，主动建构少</strong>：课堂上听讲多，但内化不足。</li>
-                    <li><strong>标准化教学，个性化缺失</strong>：统一进度难适应个体差异。</li>
-                    <li><strong>知识与应用脱节</strong>：理论不知如何解决实际问题。</li>
-                    <li><strong>学习反馈滞后</strong>：缺少即时的学习调整机会。</li>
-                </ul>
-            </div>
-            <div class="guide-box" style="background: #f0f9f0; border-left-color: #4caf50;">
-                <h4 style="margin: 0 0 12px 0;">🎯 核心任务</h4>
-                <p style="margin: 0 0 8px 0; font-weight: 500;">设计一种融合生成式人工智能（GAI）的创新学习方案。</p>
-                <p style="margin: 0 0 6px 0; font-size: 0.9rem;">你的方案可以包含以下形式（不限于）：</p>
-                <ul style="margin: 0; padding-left: 20px; font-size: 0.9rem;">
-                    <li>一种新的学习流程或方法</li>
-                    <li>一个应用程序/工具的概念设计</li>
-                    <li>一套人机协作的学习策略</li>
-                    <li>一个具体学科的学习创新案例</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 设计工具与规则 -->
-        <div class="guide-box" style="margin-bottom: 24px; background: #fff7e5; border-left-color: #ffa000;">
-            <h4 style="margin: 0 0 8px 0;">🛠️ 设计工具与规则</h4>
-            <p style="margin: 0; font-size: 0.95rem;">请使用指定的AI平台（DeepSeek）协助你完成设计，并<strong>严格遵守你被分配的交互模式</strong>。确保你的设计完整、清晰，以便他人理解和使用。</p>
-        </div>
-
         <!-- 实验组别与AI指南 - 修复版（保留所有必要ID） -->
         <div style="margin-bottom: 24px;">
             <!-- 组别信息条 -->
@@ -427,17 +686,79 @@
             </div>
         </div>
 
+        <!-- 角色说明 -->
+        <div class="guide-box" style="margin-bottom: 24px; background: #f0f4fa; border-left-color: #3a7ca5;">
+            <h4 style="margin: 0 0 8px 0;">🎓 你的角色</h4>
+            <p style="margin: 0; font-size: 0.95rem;">一位正在探索如何利用新技术改进学习体验的大学生创新者。</p>
+        </div>
+
+        <!-- 两栏布局：问题背景 + 核心任务 -->
+        <div>
+            <div class="guide-box" style="background: #f9f9ff; border-left-color: #5f9dc9; margin-bottom: 24px;">
+                <h4 style="margin: 0 0 12px 0;">📌 问题背景</h4>
+                <p style="margin: 0 0 8px 0; font-size: 0.9rem;">在数字化时代，传统的学习方式正面临挑战。许多大学生发现：</p>
+                <ul style="margin: 0; padding-left: 20px; font-size: 0.9rem;">
+                    <li><strong>被动接收多，主动建构少</strong>：课堂上听讲多，但内化不足。</li>
+                    <li><strong>标准化教学，个性化缺失</strong>：统一进度难适应个体差异。</li>
+                    <li><strong>知识与应用脱节</strong>：理论不知如何解决实际问题。</li>
+                    <li><strong>学习反馈滞后</strong>：缺少即时的学习调整机会。</li>
+                </ul>
+            </div>
+            <div class="guide-box" style="background: #f0f9f0; border-left-color: #4caf50; margin-bottom: 24px;">
+                <h4 style="margin: 0 0 12px 0;">🎯 核心任务</h4>
+                <p style="margin: 0 0 8px 0; font-weight: 500;">设计一种融合生成式人工智能（GAI）的创新学习方案。</p>
+                <p style="margin: 0 0 6px 0; font-size: 0.9rem;">你的方案可以包含以下形式（不限于）：</p>
+                <ul style="margin: 0; padding-left: 20px; font-size: 0.9rem;">
+                    <li>一种新的学习流程或方法</li>
+                    <li>一个应用程序/工具的概念设计</li>
+                    <li>一套人机协作的学习策略</li>
+                    <li>一个具体学科的学习创新案例</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 设计工具与规则 -->
+        <div class="guide-box" style="margin-bottom: 24px; background: #fff7e5; border-left-color: #ffa000;">
+            <h4 style="margin: 0 0 8px 0;">🛠️ 设计工具与规则</h4>
+            <p style="margin: 0; font-size: 0.95rem;">请使用指定的AI平台（DeepSeek）协助你完成设计，并<strong>严格遵守你被分配的交互模式</strong>。确保你的设计完整、清晰，以便他人理解和使用。</p>
+        </div>
+
+
         <!-- AI工具链接与创新点输入 -->
         <div style="background: #faf9fe; border-radius: 24px; padding: 16px 20px; margin-bottom: 20px;">
             <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 16px;">
                 <strong style="font-size: 1rem;">🔗 立即使用AI工具：</strong>
-                <a href="https://www.deepseek.com/" target="_blank" style="background: #1e4a76; color: white; padding: 6px 20px; border-radius: 40px; text-decoration: none; font-weight: 500;">👉 打开 DeepSeek 平台</a>
+                <a href="#" id="openDeepseekBtn" style="background: #1e4a76; color: white; padding: 6px 20px; border-radius: 40px; text-decoration: none; font-weight: 500; cursor: pointer;">👉 打开 DeepSeek 平台</a>
                 <span style="font-size: 0.8rem; color: #4a627a;">（新窗口打开，按上方指南交互）</span>
             </div>
             <div style="margin-top: 12px;">
                 <label style="font-weight: 600; display: block; margin-bottom: 8px;">💡 创新点简要阐释（每行1条 | 至少5条）</label>
                 <textarea id="innovationPoints" rows="5" placeholder="1. 个性化知识路径生成器：AI根据学生认知风格动态推荐学习内容&#10;2. 即时反馈对话机器人：针对课堂练习提供实时纠错与解释&#10;3. ..." style="width: 100%; padding: 12px; border-radius: 20px; border: 1px solid #cbdde9; font-size: 0.9rem;"></textarea>
                 <p style="margin-top: 8px; font-size: 0.75rem; color: #6c8dae;">格式：每行一个创新点，提交时会自动统计数量。</p>
+            </div>
+        </div>
+
+        <!-- DeepSeek 平台使用提示 Modal -->
+        <div id="deepseekModal" class="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+            <div class="modal-content" style="background: white; border-radius: 28px; padding: 32px; max-width: 520px; width: 90%; box-shadow: 0 20px 40px rgba(0,0,0,0.2); position: relative;">
+                <h3 style="margin: 0 0 20px 0; color: #1e3c72; font-size: 1.4rem;">📱 使用提示</h3>
+                <div style="font-size: 1rem; line-height: 1.6; margin-bottom: 28px;">
+                    <p style="margin: 0 0 12px 0;">
+                        <strong>• 电脑端用户</strong>：请放心操作，数据会正常保留。
+                    </p>
+                    <p style="margin: 0;">
+                        <strong>• 手机/平板用户</strong>：为避免数据丢失，请将本网页保持<strong>后台运行</strong>（不要关闭），<br>
+                        &nbsp;&nbsp;&nbsp;然后<strong>单独打开设备上的 DeepSeek APP</strong> 进行实验操作。
+                    </p>
+                </div>
+                <div class="modal-buttons" style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+                    <button id="mobileCloseBtn" type="button" class="modal-btn secondary" style="background: #e9f0f5; color: #1e4a76; border: 1px solid #cbdde9; padding: 12px 24px; border-radius: 40px; font-weight: 600; cursor: pointer; font-size: 0.95rem;">
+                        📱 我是手机/平板端 | 关闭此提示
+                    </button>
+                    <button id="desktopOpenBtn" type="button" class="modal-btn primary" style="background: linear-gradient(135deg, #1e4a76, #2b6a9f); color: white; border: none; padding: 12px 24px; border-radius: 40px; font-weight: 600; cursor: pointer; font-size: 0.95rem;">
+                        💻 我是电脑端 | 打开deepseek平台
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -460,84 +781,98 @@
         </div>
     </div>
 
-    <!-- ========================= 选项卡6: 提交汇总（优化版） ========================= -->
+    <!-- ========================= 选项卡6: 提交汇总（简化版） ========================= -->
     <div id="tab6" class="tab-pane">
-        <div class="card" style="padding: 32px;">
-            <h3 style="font-size: 1.6rem; margin-bottom: 28px; color: #1e3c72;">📬 实验结果提交</h3>
+        <div class="submit-simplified">
+            <h3 class="submit-heading">📬 实验结果提交</h3>
 
-            <!-- 基本信息卡片 -->
-            <div style="background: #f8fafe; border-radius: 24px; padding: 24px; margin-bottom: 28px;">
-                <h4 style="margin: 0 0 20px 0; color: #2c5a7a;">📋 实验基本信息</h4>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                    <div>
-                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #3a5c7a;">实验编号</label>
-                        <input id="expId" placeholder="例如 P123" readonly style="width: 100%; padding: 12px 16px; border-radius: 16px; border: 1px solid #dceaf2; background-color: #f0f4fa; font-size: 1rem;">
-                        <p style="margin-top: 6px; font-size: 0.8rem; color: #6c8dae;">按访问顺序自动分配</p>
+            <!-- 实验基本信息 - 简洁文本列表 -->
+            <div class="info-simple">
+                <h4 class="info-heading">📋 实验基本信息</h4>
+                <div class="info-list">
+                    <div class="info-row">
+                        <span class="info-label">实验编号：</span>
+                        <span id="expIdDisplay" class="info-value">P123</span>
                     </div>
-                    <div>
-                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #3a5c7a;">场认知类型</label>
-                        <input id="cognitiveTypeField" readonly placeholder="待计算" style="width: 100%; padding: 12px 16px; border-radius: 16px; border: 1px solid #dceaf2; background-color: #f0f4fa; font-size: 1rem;">
+                    <div class="info-row">
+                        <span class="info-label">场认知类型：</span>
+                        <span id="cognitiveTypeDisplay" class="info-value">待计算</span>
                     </div>
-                    <div>
-                        <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #3a5c7a;">实验组别</label>
-                        <input id="groupField" readonly style="width: 100%; padding: 12px 16px; border-radius: 16px; border: 1px solid #dceaf2; background-color: #f0f4fa; font-size: 1rem;">
+                    <div class="info-row">
+                        <span class="info-label">实验组别：</span>
+                        <span id="groupDisplay" class="info-value">A组</span>
+                    </div>
+                </div>
+                <!-- 隐藏输入框，供数据生成函数使用 -->
+                <div style="display: none;">
+                    <input id="expId" value="P123">
+                    <input id="cognitiveTypeField" value="待计算">
+                    <input id="groupField" value="A组">
+                </div>
+            </div>
+
+            <!-- 创新点列表 - 简洁文本列表 -->
+            <div class="innovation-simple">
+                <div class="innovation-header">
+                    <h4 class="innovation-heading">💡 创新点列表</h4>
+                    <span id="innovationCount" class="innovation-count">0 条</span>
+                </div>
+                <div id="finalInnovationsPreview" class="innovation-list">
+                    无创新点，请返回上一页填写
+                </div>
+                <p class="innovation-note">列表将自动从创新方案页面读取</p>
+            </div>
+
+            <!-- 三步操作流程 -->
+            <div class="steps-simple">
+                <div class="step step-1 active">
+                    <div class="step-marker">1</div>
+                    <div class="step-content">
+                        <h5 class="step-title">生成完整实验数据包</h5>
+                        <p class="step-description">点击生成最终数据，包含所有实验信息</p>
+                        <button id="generateFullDataBtn" class="step-button primary" type="button">
+                            📄 生成完整实验数据包
+                        </button>
+                    </div>
+                </div>
+
+                <div class="step step-2 disabled">
+                    <div class="step-marker">2</div>
+                    <div class="step-content">
+                        <h5 class="step-title">复制实验数据</h5>
+                        <p class="step-description">复制生成的数据，用于提交到数据收集表</p>
+                        <button id="copyDataBtn" class="step-button secondary" disabled type="button">
+                            📋 复制全部数据
+                        </button>
+                    </div>
+                </div>
+
+                <div class="step step-3 disabled">
+                    <div class="step-marker">3</div>
+                    <div class="step-content">
+                        <h5 class="step-title">进入数据收集表并粘贴</h5>
+                        <p class="step-description">打开数据收集表，粘贴复制的数据</p>
+                        <div class="step-actions">
+                            <button id="gotoSheetBtn" class="step-action primary" disabled type="button">
+                                📊 进入数据收集表
+                            </button>
+                        </div>
+                        <p class="step-note">若无法打开表格，请将实验数据发送至实验邮箱：2652482791@qq.com / ochen6479@gmail.com</p>
                     </div>
                 </div>
             </div>
 
-            <!-- 创新点预览 -->
-            <div style="background: #f9fbfe; border-radius: 24px; padding: 24px; margin-bottom: 28px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-                    <h4 style="margin: 0; color: #2c5a7a;">💡 创新点列表</h4>
-                    <span id="innovationCount" style="background: #e2f0fa; color: #1e4a76; padding: 4px 12px; border-radius: 30px; font-size: 0.85rem;">0 条</span>
-                </div>
-                <div style="background: white; border-radius: 20px; border: 1px solid #e9f0f5; overflow: hidden;">
-                    <pre id="finalInnovationsPreview" style="margin: 0; padding: 20px; max-height: 280px; overflow-y: auto; font-size: 0.95rem; line-height: 1.5; white-space: pre-wrap;">无创新点，请返回上一页填写</pre>
-                </div>
-                <p style="margin-top: 12px; font-size: 0.85rem; color: #6c8dae;">列表将自动从创新方案页面读取</p>
-            </div>
+            <!-- 数据预览区域（仅在第一步完成后显示） -->
+            <div id="resultDataArea" class="data-preview hidden">
+                <h4 class="preview-heading">📋 数据预览</h4>
+                <p class="preview-subtitle">复制或通过邮件提交给研究人员</p>
 
-            <!-- 操作按钮 -->
-            <div style="text-align: center; margin-bottom: 32px;">
-                <button id="generateFullDataBtn" style="background: linear-gradient(135deg, #1e4a76, #2b6a9f); color: white; border: none; padding: 16px 40px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(30, 74, 118, 0.2);">
-                    📄 生成完整实验数据包
-                </button>
-                <p style="margin-top: 12px; font-size: 0.85rem; color: #6c8dae;">点击生成最终数据，包含所有实验信息</p>
-            </div>
+                <pre id="fullDataPreview" class="preview-content">
+暂无数据，点击上方按钮生成
+                </pre>
 
-            <!-- 数据预览区域 -->
-            <div id="resultDataArea" style="background: #f0f7ff; border-radius: 28px; padding: 28px; border: 1px solid #dceaf2;">
-                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-                    <div style="background: #1e4a76; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">📨</div>
-                    <div>
-                        <h4 style="margin: 0; color: #1e3c72;">汇总数据</h4>
-                        <p style="margin: 4px 0 0 0; font-size: 0.9rem; color: #4a627a;">复制或通过邮件提交给研究人员</p>
-                    </div>
-                </div>
-
-                <div id="fullDataPreview" style="background: white; border-radius: 20px; padding: 20px; border: 1px solid #dceaf2; max-height: 320px; overflow-y: auto; font-family: 'Monaco', 'Consolas', monospace; font-size: 0.9rem; line-height: 1.4; margin-bottom: 24px; white-space: pre-wrap;">暂无数据，点击上方按钮生成</div>
-
-                <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
-                    <button id="copyDataBtn" style="background: #2c7a4d; color: white; border: none; padding: 12px 28px; border-radius: 40px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
-                        📋 复制全部数据
-                    </button>
-                    <button id="gotoSheetBtn" style="background: #1e4a76; color: white; border: none; padding: 12px 28px; border-radius: 40px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;">
-                        📊 进入数据收集表
-                    </button>
-                    <button type="button" id="mailtoLink" style="background: #eef3fc; color: #1e4a76; border: 1px solid #cbdde9; padding: 12px 28px; border-radius: 40px; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                        📧 发送至实验邮箱
-                    </button>
-                </div>
-                <div style="margin-top: 12px; text-align: center; font-size: 0.85rem; color: #4a627a;">
-                    <p style="margin: 0;">
-                        若无法打开表格，请将实验数据发送至实验邮箱：2652482791@qq.com / ochen6479@gmail.com
-                    </p>
-                </div>
-
-                <div style="margin-top: 20px; padding: 14px; background: #fff9ef; border-radius: 16px; border-left: 4px solid #ffa000;">
-                    <p style="margin: 0; font-size: 0.85rem; color: #8a6d3b;">
-                        <strong>⚠️ 注意：</strong>数据仅保存在本地浏览器中，提交前请确认所有信息完整准确。发送邮件前请检查数据预览。
-                    </p>
+                <div class="preview-note">
+                    <strong>⚠️ 注意：</strong>数据仅保存在本地浏览器中，提交前请确认所有信息完整准确。发送邮件前请检查数据预览。
                 </div>
             </div>
         </div>
@@ -551,6 +886,40 @@
     let ttctResult = { fluency:0, flexibility:0, originality:0, total:0 };
     let postSurveyAnswers = {};
     let currentGroup = "AI主导型";
+
+    // ---------- 步骤状态管理 ----------
+    function updateStepStatus(stepNumber) {
+        // 处理所有步骤 (1, 2, 3)
+        for (let i = 1; i <= 3; i++) {
+            const step = document.querySelector(`.step-${i}`);
+            if (!step) continue;
+
+            if (i <= stepNumber) {
+                // 已完成的步骤
+                step.classList.remove('disabled');
+                step.classList.add('active');
+            } else if (i === stepNumber + 1) {
+                // 当前可操作的步骤
+                step.classList.remove('disabled');
+                step.classList.add('active');
+            } else {
+                // 未来的步骤
+                step.classList.remove('active');
+                step.classList.add('disabled');
+            }
+        }
+
+        // 更新按钮状态
+        if (stepNumber >= 1) {
+            document.getElementById('copyDataBtn').disabled = false;
+        }
+        if (stepNumber >= 2) {
+            document.getElementById('gotoSheetBtn').disabled = false;
+            // mailtoLink 元素可能不存在，检查后再设置
+            const mailtoLink = document.getElementById('mailtoLink');
+            if (mailtoLink) mailtoLink.disabled = false;
+        }
+    }
 
     // 顺序循环分配实验组别（基于实验编号，依次循环：AI主导型、人类主导型、协同共创型）
     function assignSequentialGroup(expId) {
@@ -615,6 +984,10 @@
         const fieldEl = document.getElementById("groupField");
         if (fieldEl) fieldEl.value = assignedGroup;
 
+        // 更新简化页面的组别显示
+        const displayEl = document.getElementById("groupDisplay");
+        if (displayEl) displayEl.textContent = assignedGroup;
+
         // 更新模式指南
         updateModeGuide();
     }
@@ -630,8 +1003,24 @@
 
         // 监听实验编号变化，重新分配组别
         document.getElementById("expId").addEventListener("input", function(e) {
-            updateGroupDisplay(e.target.value);
+            const newValue = e.target.value;
+            updateGroupDisplay(newValue);
+            document.getElementById('expIdDisplay').textContent = newValue;
         });
+
+        // 更新显示元素的值
+        document.getElementById('expIdDisplay').textContent = expId;
+        document.getElementById('cognitiveTypeDisplay').textContent = cognitiveScores.type || '待计算';
+        document.getElementById('groupDisplay').textContent = currentGroup;
+
+        // 更新隐藏输入框的值
+        document.getElementById('expId').value = expId;
+        document.getElementById('cognitiveTypeField').value = cognitiveScores.type || '待计算';
+        document.getElementById('groupField').value = currentGroup;
+
+        // 初始化步骤状态
+        updateStepStatus(0);
+        document.getElementById('resultDataArea').classList.add('hidden');
     });
 
     // ---------- 1. 认知风格量表生成 (30题) ----------
@@ -670,6 +1059,7 @@
         cognitiveScores = { pre15: preSum, post15: postSum, type: type };
         document.getElementById("cognitiveResult").innerHTML = `前15题总分:${preSum} | 后15题总分:${postSum} → 认知风格: ${type}`;
         document.getElementById("cognitiveTypeField").value = type;
+        document.getElementById("cognitiveTypeDisplay").textContent = type;
         alert(`认知风格计算完成：${type}`);
     });
 
@@ -971,10 +1361,9 @@ function renderPostSurveyByGroup(group) {
                 生成式AI使用频率: document.getElementById("aiFreq").value,
             };
             const aiTasksSelected = Array.from(document.querySelectorAll("#aiTasks input:checked")).map(cb=>cb.value);
+            const cupUsesRaw = document.getElementById("cupUses").value;
             const ttctChinese = {
-                流畅性: ttctResult.fluency,
-                灵活性: ttctResult.flexibility,
-                独特性: ttctResult.originality,
+                纸杯用途内容: cupUsesRaw,
                 总分: ttctResult.total
             };
             const finalData = {
@@ -991,6 +1380,7 @@ function renderPostSurveyByGroup(group) {
 
             // 1. 更新预览
             document.getElementById("finalInnovationsPreview").innerText = innovationsList.map((p,i)=>`${i+1}. ${p}`).join("\n") || "无创新点";
+            document.getElementById("innovationCount").textContent = innovationsList.length + " 条";
             const previewDiv = document.getElementById("fullDataPreview");
             // 生成制表符分隔的数据行
             const tabSeparatedValues = [
@@ -1003,9 +1393,7 @@ function renderPostSurveyByGroup(group) {
                 finalData.基本信息.是否修过计算机相关课程 || '',
                 finalData.基本信息.生成式AI使用频率 || '',
                 (finalData.常用AI任务 || []).map(task => task ? task.replace(/[\r\n]+/g, ' ') : '').join('; '),
-                finalData.TTCT创造力得分.流畅性?.toString() || '0',
-                finalData.TTCT创造力得分.灵活性?.toString() || '0',
-                finalData.TTCT创造力得分.独特性?.toString() || '0',
+                (finalData.TTCT创造力得分.纸杯用途内容 || '').replace(/[\r\n\t]+/g, ' '),
                 finalData.TTCT创造力得分.总分?.toString() || '0',
                 (finalData.创新点列表 || []).map(point => point ? point.replace(/[\r\n]+/g, ' ') : '').join('; '),
                 // 后测问卷：将答案对象转换为字符串，格式为 "q1:值,q2:值,..."，处理换行符
@@ -1031,6 +1419,10 @@ function renderPostSurveyByGroup(group) {
             const tabSeparatedLine = tabSeparatedValues.join('\t');
             previewDiv.innerText = tabSeparatedLine;
             console.log('生成制表符分隔数据成功:', tabSeparatedLine);
+
+            // 更新步骤状态并显示数据预览
+            updateStepStatus(1);
+            document.getElementById('resultDataArea').classList.remove('hidden');
         } catch (error) {
             console.error('生成数据时出错:', error);
             alert('生成数据时出错，请检查控制台查看详情。');
@@ -1041,17 +1433,65 @@ function renderPostSurveyByGroup(group) {
     document.getElementById("copyDataBtn").addEventListener("click", () => {
         const text = document.getElementById("fullDataPreview").innerText;
         if(text && text !== "暂无数据，点击上方按钮生成") {
-            navigator.clipboard.writeText(text).then(() => {
-                // 显示短暂的成功提示
-                const originalText = document.getElementById("copyDataBtn").innerHTML;
-                document.getElementById("copyDataBtn").innerHTML = "✅ 已复制";
-                document.getElementById("copyDataBtn").style.backgroundColor = "#2c7a4d";
-                setTimeout(() => {
-                    document.getElementById("copyDataBtn").innerHTML = originalText;
-                }, 1500);
-            }).catch(err => {
-                console.error("复制失败:", err);
-                alert("复制失败，请手动复制数据");
+            // 尝试使用现代 Clipboard API
+            const copyToClipboard = async () => {
+                try {
+                    // 方法1: 使用现代 Clipboard API
+                    await navigator.clipboard.writeText(text);
+                    return true;
+                } catch (err) {
+                    console.log("Clipboard API 失败，尝试备用方法:", err);
+
+                    // 方法2: 备用方法 - 使用 document.execCommand (已弃用但兼容性好)
+                    try {
+                        const textArea = document.createElement('textarea');
+                        textArea.value = text;
+                        textArea.style.position = 'fixed';
+                        textArea.style.left = '-999999px';
+                        textArea.style.top = '-999999px';
+                        document.body.appendChild(textArea);
+                        textArea.focus();
+                        textArea.select();
+
+                        const success = document.execCommand('copy');
+                        document.body.removeChild(textArea);
+
+                        if (success) {
+                            return true;
+                        } else {
+                            throw new Error('execCommand 复制失败');
+                        }
+                    } catch (execErr) {
+                        console.log("备用复制方法也失败:", execErr);
+                        return false;
+                    }
+                }
+            };
+
+            copyToClipboard().then(success => {
+                if (success) {
+                    // 复制成功，更新UI
+                    try {
+                        updateStepStatus(2);
+                    } catch (uiErr) {
+                        console.error("UI更新错误，但复制已成功:", uiErr);
+                        // 继续显示成功提示
+                    }
+
+                    // 显示短暂的成功提示
+                    const originalText = document.getElementById("copyDataBtn").innerHTML;
+                    const originalBgColor = document.getElementById("copyDataBtn").style.backgroundColor;
+                    document.getElementById("copyDataBtn").innerHTML = "✅ 已复制";
+                    document.getElementById("copyDataBtn").style.backgroundColor = "#2c7a4d";
+                    setTimeout(() => {
+                        document.getElementById("copyDataBtn").innerHTML = originalText;
+                        document.getElementById("copyDataBtn").style.backgroundColor = originalBgColor;
+                    }, 1500);
+                } else {
+                    // 所有复制方法都失败
+                    console.error("所有复制方法都失败");
+                    alert("复制失败，请手动选择并复制数据");
+                }
             });
         } else {
             alert("请先点击「生成完整实验数据包」");
@@ -1061,27 +1501,31 @@ function renderPostSurveyByGroup(group) {
     document.getElementById("gotoSheetBtn").addEventListener("click", () => {
         window.open("https://docs.qq.com/sheet/DVm9Vckh6bkJiUG9N?tab=BB08J2", "_blank");
     });
-    document.getElementById("mailtoLink").addEventListener("click", () => {
-        const emailAddresses = "2652482791@qq.com; ochen6479@gmail.com";
-        navigator.clipboard.writeText(emailAddresses).then(() => {
-            // 显示短暂的成功提示
-            const originalText = document.getElementById("mailtoLink").innerHTML;
-            document.getElementById("mailtoLink").innerHTML = "✅ 已复制邮箱";
-            document.getElementById("mailtoLink").style.backgroundColor = "#2c7a4d";
-            document.getElementById("mailtoLink").style.color = "white";
-            setTimeout(() => {
-                document.getElementById("mailtoLink").innerHTML = originalText;
-                document.getElementById("mailtoLink").style.backgroundColor = "#eef3fc";
-                document.getElementById("mailtoLink").style.color = "#1e4a76";
-            }, 1500);
-        }).catch(err => {
-            console.error("复制失败:", err);
-            alert("复制失败，请手动复制邮箱地址：\n" + emailAddresses);
-        });
-    });
     document.getElementById("confirmConsentBtn").addEventListener("click",()=>{
         alert("感谢同意，请继续完成后续实验模块。");
         document.querySelector(".tab-btn[data-tab='tab2']").click();
+    });
+
+    // DeepSeek 平台使用提示 Modal 功能
+    document.getElementById("openDeepseekBtn").addEventListener("click", (e) => {
+        e.preventDefault();
+        document.getElementById("deepseekModal").style.display = "flex";
+    });
+
+    document.getElementById("mobileCloseBtn").addEventListener("click", () => {
+        document.getElementById("deepseekModal").style.display = "none";
+    });
+
+    document.getElementById("desktopOpenBtn").addEventListener("click", () => {
+        document.getElementById("deepseekModal").style.display = "none";
+        window.open("https://chat.deepseek.com/", "_blank");
+    });
+
+    // 点击模态框外部关闭
+    document.getElementById("deepseekModal").addEventListener("click", (e) => {
+        if (e.target.id === "deepseekModal") {
+            document.getElementById("deepseekModal").style.display = "none";
+        }
     });
     // 选项卡切换逻辑
     document.querySelectorAll(".tab-btn").forEach(btn => {
